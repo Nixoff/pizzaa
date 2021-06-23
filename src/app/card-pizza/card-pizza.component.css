@@ -24,14 +24,44 @@
     border-radius: 10px !important;
 }
 
-.card-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.disabled {
+
+  
     background-image: linear-gradient(120deg, #00000060, #000000);
     opacity: .7;
-    display: unset;
+
+}
+
+.app-card-pizza {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+
+.form-switch:before {
+    content: 'Disponível';
+    /* left: -5rem;
+    top: 5px; */
+    cursor: default;
+    margin-right: 3rem;
+}
+
+input#flexSwitchCheckDefault {
+    background-color: red;
+    width: 3rem;
+    height: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-image: escape-svg($form-switch-checked-bg-image) !important;
+}
+
+input#flexSwitchCheckDefault:checked {
+    background-color: green;
+}
+
+input#flexSwitchCheckDefault:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
 }

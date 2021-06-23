@@ -14,4 +14,8 @@ export class PizzasService {
   list() {
     return this.http.get<Pizza[]>(this.API);
   }
+
+  addPizza(pizza:Pizza){
+    return this.http.post(this.API,pizza);
+  }
 }
