@@ -1,0 +1,32 @@
+app-card-pizza {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.btn-outline-success:hover {
+    color: #39B100 !important;
+    background-color: #FFF !important;
+    border-color: #39B100;
+}
+
+.bg-red {
+    background-color: #C72828;
+    align-items: flex-start;
+    height: 20rem;
+}
+
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+    opacity: 1;
+}
+
+.btn-outline-success:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.container {
+    margin-top: -6rem;
+}

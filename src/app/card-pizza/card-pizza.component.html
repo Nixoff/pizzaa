@@ -1,0 +1,37 @@
+<div *ngFor="let pizza of pizzas" class="card" style="width: 22rem;margin-left: 1rem;margin-bottom: 1rem;">
+    <img src="{{pizza.imgUrl}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{pizza.sabor}}</h5>
+        <p class="card-text">{{pizza.descricao}}</p>
+        <h6>R$: <b>{{pizza.valor}}</b></h6>
+    </div>
+    <div class="card">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+
+                <span class="badge bg-warning text-dark" style="height: 2rem;    text-transform: uppercase;
+                padding: inherit;
+                color: white !important;">{{pizza.tamanho}}</span>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-light">
+                <img src="../../assets/svgs/pencil.svg" alt="">
+              </button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-light">
+                <img src="../../assets/svgs/trash.svg" alt="">
+              </button>
+                        </div>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Third group">
+
+                        <!-- <p class="checkboxDisponivel">Disponível</p> -->
+                        <app-toggle-button> </app-toggle-button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

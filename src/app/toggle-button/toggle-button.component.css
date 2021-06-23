@@ -1,0 +1,26 @@
+.form-switch:before {
+    content: 'Disponível';
+    /* left: -5rem;
+    top: 5px; */
+    cursor: default;
+    margin-right: 3rem;
+}
+
+input#flexSwitchCheckDefault {
+    background-color: red;
+    width: 3rem;
+    height: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-image: escape-svg($form-switch-checked-bg-image) !important;
+}
+
+input#flexSwitchCheckDefault:checked {
+    background-color: green;
+}
+
+input#flexSwitchCheckDefault:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
